@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+
+        <IsPackable>false</IsPackable>
+        <IsTestProject>true</IsTestProject>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="coverlet.collector" Version="6.0.0"/>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0"/>
+        <PackageReference Include="NUnit" Version="3.14.0"/>
+        <PackageReference Include="NUnit.Analyzers" Version="3.9.0"/>
+        <PackageReference Include="NUnit3TestAdapter" Version="4.5.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Using Include="NUnit.Framework"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ChatRoom.Client\ChatRoom.Client.csproj" />
+      <ProjectReference Include="..\ChatRoom.Server\ChatRoom.Server.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="obj\Debug\net8.0\ChatRoom.404774B2.Up2Date" />
+      <Content Include="obj\Debug\net8.0\ChatRoom.Tests.csproj.CoreCompileInputs.cache" />
+      <Content Include="obj\Debug\net8.0\ChatRoom.Tests.csproj.FileListAbsolute.txt" />
+      <Content Include="obj\Debug\net8.0\ChatRoom.Tests.dll" />
+      <Content Include="obj\Debug\net8.0\ChatRoom.Tests.genruntimeconfig.cache" />
+      <Content Include="obj\Debug\net8.0\ChatRoom.Tests.pdb" />
+      <Content Include="obj\Debug\net8.0\ChatRoom.Tests.sourcelink.json" />
+    </ItemGroup>
+
+</Project>
